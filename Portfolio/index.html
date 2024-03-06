@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Pessoal</title>
+  <script src="script.js" defer></script>
+  <meta name="description" content="Olá, esté é meu portfolio pessoal venha dar uma olhada!">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +19,31 @@
 <body>
 
   <header class="header">
-    <img src="./img/logo uelisson.svg" alt="Logo">
-    <img src="./img/menu.svg" alt="menu-hamb" class="hamb">
+    <img src="./img/logo uelisson.svg" alt="Logo" width="434px" height="57px">
+    <img src="./img/menu.svg" alt="menu-hamb" class="hamb" width="24px" height="24px">
     <nav>
       <ul class="header-menu">
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#contato" id="open-modal">Contato</a></li>
       </ul>
+      <div id="fade" class="hide"></div>
+      <div class="hide" id="modal">
+        <div class="form-box">
+          <div class="modal-header">
+            <h2 class="titulo-modal">Envie sua menssagem</h2>
+          </div>
+          <div class="modal-body">
+            <form action="" method="get">
+              <input type="text" name="name" placeholder="Seu nome">
+              <input type="email" name="email" placeholder="Seu E-mail">
+              <input class="assuntinho" type="text" name="subject" placeholder="Assunto">
+              <textarea name="message" placeholder="Digite sua menssagem"></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -33,15 +52,23 @@
       <div class="card">
         <div class="card-info">
           <p class="info">Desenvolvedor FullStack</p>
-          <img src="./img/img perfil.svg" alt="logoperfil" class="perfil">
+          <img src="./img/img perfil.svg" alt="logoperfil" class="perfil" width="160px" height="162px">
           <p class="email">uelissontiago@02@gmail.com</p>
           <p class="localizacao"> Brasil - Salvador/BA</p>
-          <img src="./img/redes.png" alt="redes" class="redeszinhas">
+          <img src="./img/redes.png" alt="redes" class="redeszinhas" width="106px" height="30px">
           <div class="icones">
-            <img src="./img/logo insta.png" alt="insta-icon">
-            <img src="./img/logo git.png" alt="git-icon">
-            <img src="./img/logo linkedin.png" alt="linkedin-icon">
-            <img src="./img/logo zap.png" alt="zap-icon">
+            <a class="logos-marcas1" href="">
+              <img src="./img/logo insta.png" alt="insta-icon">
+            </a>
+            <a class="logos-marcas2" href="https://github.com/welissontiago">
+              <img src="./img/logo git.png" alt="git-icon">
+            </a>
+            <a class="logos-marcas3" href="https://www.linkedin.com/in/uelisson-tiago-a549691b5/">
+              <img src="./img/logo linkedin.png" alt="linkedin-icon">
+            </a>
+            <a class="logos-marcas4" href="https://wa.me/+5571986549332">
+              <img src="./img/logo zap.png" alt="zap-icon">
+            </a>
           </div>
         </div>
       </div>

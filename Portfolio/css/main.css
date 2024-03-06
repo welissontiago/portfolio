@@ -79,18 +79,26 @@
   gap: 10px;
 }
 
+.logos-marcas2 {
+  margin-top: -10px;
+}
+
+.logos-marcas4 {
+  margin-top: -6px;
+}
+
 .icons-experience {
   display: flex;
-  gap: 3rem; /* Espaçamento entre as imagens */
+  gap: 3rem;
   margin-top: 1.4rem;
   margin-left: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .icons-experience img {
-  width: 20%; /* Define a largura das imagens como 20% do contêiner pai */
-  max-width: 100px; /* Limita a largura máxima das imagens */
-  height: auto; /* Altura automática para manter a proporção */
+  width: 20%;
+  max-width: 100px;
+  height: auto;
 }
 
 h1 {
@@ -118,6 +126,13 @@ h2 {
   padding: 25px 150px;
   z-index: 1;
   position: relative;
+}
+
+.logos-marcas {
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
+  text-decoration: none;
 }
 
 .xp::before {
