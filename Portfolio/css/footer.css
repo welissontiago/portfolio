@@ -1,5 +1,6 @@
 .footer {
   background: #121621;
+  padding: 2rem 0;
 }
 .footer-container {
   max-width: 1200px;
@@ -16,6 +17,11 @@
   font-weight: 700;
   color: #ffffff;
   margin-left: 14.5rem;
+  transition: color 0.3s ease;
+}
+
+.titulo-footer:hover {
+  color: #d3d9f4;
 }
 
 .footer-texto {
@@ -24,6 +30,11 @@
   font-weight: 600;
   color: #9e9fa3;
   text-align: end;
+  transition: color 0.3s ease;
+}
+
+.footer-texto:hover {
+  color: #d3d9f4;
 }
 
 .footer-contato {
@@ -37,6 +48,15 @@
   position: relative;
 }
 
+.footer-contato li {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-contato li:hover {
+  color: #d3d9f4;
+}
+
 .footer-contato li::before {
   display: block;
   content: "";
@@ -46,6 +66,11 @@
   position: absolute;
   margin-left: -30px;
   margin-top: 18px;
+  transition: transform 0.3s ease;
+}
+
+.footer-contato li:hover::before {
+  transform: scale(1.1);
 }
 
 .footer-copy {
@@ -56,105 +81,84 @@
   text-align: end;
 }
 
-@media (max-width: 800px) {
-  .footer-contato {
-    font-size: 1.2rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    color: #9e9fa3;
-    margin-left: 5rem;
-    margin-top: -9rem;
-    line-height: 3;
-    position: relative;
+@media (max-width: 1200px) {
+  .footer-container {
+    gap: 50px;
   }
-
+  
   .titulo-footer {
-    font-size: 2.25rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    color: #ffffff;
+    margin-left: 8rem;
+  }
+  
+  .footer-contato {
+    margin-left: 10rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-contato {
+    margin-left: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .titulo-footer {
+    margin-left: 3rem;
+  }
+  
+  .footer-texto {
+    text-align: left;
     margin-left: 3rem;
   }
 }
 
 @media (max-width: 650px) {
   .footer-texto {
-    font-size: 0.8rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    color: #9e9fa3;
-    text-align: end;
-  }
-
-  .footer-copy {
-    font-size: 0.6rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #9e9fa3;
-    text-align: end;
-  }
-}
-
-@media (max-width: 515px) {
-  .footer-texto {
-    font-size: 0.8rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    color: #9e9fa3;
-    text-align: end;
-  }
-  .footer-copy {
-    font-size: 0.6rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #9e9fa3;
-    text-align: end;
-  }
-
-  .footer-contato {
     font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    color: #9e9fa3;
-    margin-left: 3rem;
-    margin-top: -9rem;
-    line-height: 3;
-    position: relative;
+    margin-left: 2rem;
   }
-
+  
+  .footer-copy {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 2rem;
+  }
+  
+  .footer-contato {
+    margin-left: 3rem;
+  }
+  
   .titulo-footer {
-    font-size: 2.25rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    margin-left: 1rem;
+    font-size: 1.8rem;
   }
 }
 
-@media (max-width: 433px) {
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 20px;
+  }
+  
   .titulo-footer {
     font-size: 1.5rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    color: #ffffff;
     margin-left: 1rem;
   }
+  
   .footer-contato {
     font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    color: #9e9fa3;
     margin-left: 2rem;
-    margin-top: -8rem;
-    line-height: 3;
-    position: relative;
   }
-
+  
   .footer-texto {
-    font-size: 0.6rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    color: #9e9fa3;
-    text-align: center;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+  
+  .footer-copy {
+    font-size: 0.7rem;
+    margin-left: 1rem;
   }
 }
